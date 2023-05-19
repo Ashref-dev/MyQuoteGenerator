@@ -1,7 +1,7 @@
-/* Importing a font from Google Fonts to be used throughout the document */
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap");
 
-/* Applying some global styles to improve font rendering and set the default font family */
+/* Applying font smoothing and setting the default font family */
 * {
   -webkit-font-smoothing: antialiased;
   font-family: "Josefin sans", Arial, Helvetica, sans-serif;
@@ -9,7 +9,6 @@
 
 /* Styling the body element */
 body {
-  /* Resetting default margin and setting up flexbox to center the content */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -63,6 +62,7 @@ h1 {
 
 /* Styling the gradient button */
 .gradient-button {
+  /* Setting the background gradient */
   background: rgb(135, 67, 255);
   background: -moz-linear-gradient(
     270deg,
@@ -80,19 +80,30 @@ h1 {
     rgba(65, 54, 241, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff",endColorstr="#4136f1",GradientType=1);
+
+  /* Adding box shadow */
   box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+  /* Setting the font family, weight, and size */
   font-family: "Josefin sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 2vh;
+
+  /* Setting the text color, border, padding, and border radius */
   color: white;
   border: none;
   padding: 1.7vh 5vh;
   border-radius: 18px;
+
+  /* Making the width fit the content and setting the cursor to a pointer */
   width: fit-content;
   cursor: pointer;
+
+  /* Adding transition for smooth animation */
   transition: all 650ms;
 }
 
+/* Styling the gradient button on hover and focus */
 .gradient-button:hover,
 .gradient-button:focus {
   transform: translateY(-0.5rem);
@@ -100,6 +111,7 @@ h1 {
   border: 0;
 }
 
+/* Styling the gradient button on active state */
 .gradient-button:active {
   background: #9557ff;
 }
@@ -115,40 +127,57 @@ h1 {
   overflow: hidden;
 }
 
-/* Styling the individual shapes */
 .shape {
+  /* Setting the position and size of the shape */
   position: absolute;
   width: max(55px, 9vw);
   height: max(55px, 9vw);
   opacity: 1;
+
+  /* Setting the animation properties for shape movement */
   animation: shapeMovement 8s infinite alternate;
   animation-timing-function: cubic-bezier(0.42, 0, 0.53, 0.99);
 }
+/* * The max() CSS function is like a magic tool that helps us choose the biggest value between two options.
+It's used to determine the size of the shapes: 
+We have two options: 55 pixels and 9% of the viewport width.
+So, max(55px, 9vw) means the size of the shape will be the bigger value between 55 pixels and 9% of the  viewport width.
+For example, 
+-If the viewport is very wide, let's say 1000 pixels, the shape will be 9% of 1000 pixels, which is 90 pixels,
+because that's bigger than 55 pixels. 
+-But if the viewport is narrow, like 300 pixels, the shape will be 55 pixels,
+because that's bigger than 9% of 300 pixels, which is only 27 pixels.
+==> Even when the viewport is narrow the shape won't become too small 🎉
+*/
 
+/* Styling the square shape */
 .shape-square {
   background-color: #ffc371;
   transform-origin: center;
 }
 
+/* Styling the circle shape */
 .shape-circle {
   background-color: #ff5f6d;
   border-radius: 50%;
   transform-origin: center;
 }
 
+/* Styling the triangle shape */
 .shape-triangle {
   background-color: #8d82ff;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   transform-origin: center;
 }
 
+/* Styling the hexagon shape */
 .shape-hexagon {
   background-color: #82ff9e;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   transform-origin: center;
 }
 
-/* Animating the shape movement */
+/* Setting the animation keyframes for shape movement */
 @keyframes shapeMovement {
   0% {
     transform: translate(-10px, -10px) rotate(0deg);
@@ -161,7 +190,15 @@ h1 {
   }
 }
 
-/* Positioning and duration for each shape */
+/* Setting the positioning and animation duration for each shape */
+
+/* * Imagine you have a bunch of items lined up in a row, like books on a shelf.
+ The :nth-child selector is a way to pick a specific item from that row based on its position. 
+ Let's say you want to select the third book, a famous work by Kafka. 
+ You can use the :nth-child(3) selector to pick that book specifically. 
+ It's like saying, "Hey, give me the book that is in the third position",
+ so any styles you write will only be applied to that book! (meaning our selected element)
+ */
 .shape:nth-child(1) {
   top: 53%;
   left: 56%;
@@ -255,29 +292,29 @@ h1 {
 
 /* Media query for mobile devices with a maximum width of 480px */
 @media (max-width: 480px) {
-  /* Adjusting the margin and padding of the quote container */
+  /* Adjusting the styling of the quote container for mobile */
   .quote-container {
     margin: 2em 1em;
     padding: 2em 1.2em;
   }
 
-  /* Adjusting the font size of the heading */
+  /* Adjusting the font size of the heading for mobile */
   h1 {
     font-size: 2em;
   }
 
-  /* Adjusting the font size of the quote text */
+  /* Adjusting the font size and flex shrink for the quote text for mobile */
   .quote-text {
     font-size: 1.6em;
     flex-shrink: 1;
   }
 
-  /* Adjusting the font size of the quote author */
+  /* Adjusting the font size of the quote author for mobile */
   .quote-author {
     font-size: 1.2em;
   }
 
-  /* Adjusting the font size of the gradient button */
+  /* Adjusting the font size of the quote button for mobile */
   .quote-button {
     font-size: 24px;
   }
