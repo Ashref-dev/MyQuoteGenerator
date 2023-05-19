@@ -7,11 +7,10 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-
-  /* background-color: #f2f2f2; */
   overflow: hidden;
   position: relative;
 }
@@ -70,15 +69,12 @@ h1 {
     rgba(65, 54, 241, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff",endColorstr="#4136f1",GradientType=1);
-
   box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
-
   font-family: "Josefin sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 2vh;
   color: white;
   border: none;
-
   padding: 1.7vh 5vh;
   border-radius: 18px;
   width: fit-content;
@@ -172,7 +168,7 @@ h1 {
 }
 
 .shape:nth-child(4) {
-  top: 39%;
+  top: 34%;
   left: 8%;
   animation-duration: 6.1s;
 }
@@ -252,7 +248,7 @@ h1 {
     font-size: 2em;
   }
   .quote-text {
-    font-size: 1.8em;
+    font-size: 1.6em;
     flex-shrink: 1;
   }
 
