@@ -1,7 +1,7 @@
-// API endpoint
+// API endpoint link to pass to the fetch request
 const url = "https://api.quotable.io/random";
 
-// Sending GET request to the API
+// Sending a GET request to the API
 let getQuote = () => {
   fetch(url)
     .then((response) => response.json())

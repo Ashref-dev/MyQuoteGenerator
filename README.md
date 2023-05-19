@@ -33,3 +33,9 @@ We encourage you to contribute to the Awesome Quote Generator and make it even b
 We believe that everyone can benefit from a little bit of positivity and inspiration. Join us in spreading joy, one quote at a time!
 
 Let's make the world a better place together. Happy quoting! 🌈✨
+
+
+
+what i learned from this project:
+CSS max property is EPIC
+:nth-child css selector makes it easy for you 
