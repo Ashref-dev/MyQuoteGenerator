@@ -1,10 +1,15 @@
+/* Importing a font from Google Fonts to be used throughout the document */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap");
 
+/* Applying some global styles to improve font rendering and set the default font family */
 * {
   -webkit-font-smoothing: antialiased;
   font-family: "Josefin sans", Arial, Helvetica, sans-serif;
 }
+
+/* Styling the body element */
 body {
+  /* Resetting default margin and setting up flexbox to center the content */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -15,12 +20,14 @@ body {
   position: relative;
 }
 
+/* Styling the container element */
 .container {
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
+/* Styling the heading element */
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -28,6 +35,7 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Styling the quote container */
 .quote-container {
   background-color: rgba(255, 255, 255, 0.5);
   margin: 3em 10em;
@@ -37,6 +45,7 @@ h1 {
   backdrop-filter: blur(10px);
 }
 
+/* Styling the quote text */
 .quote-text {
   font-size: 3em;
   font-weight: 700;
@@ -45,12 +54,14 @@ h1 {
   line-height: 1.1em;
 }
 
+/* Styling the quote author */
 .quote-author {
   font-size: 2.2em;
   font-weight: 300;
   color: #777;
 }
 
+/* Styling the gradient button */
 .gradient-button {
   background: rgb(135, 67, 255);
   background: -moz-linear-gradient(
@@ -88,11 +99,12 @@ h1 {
   transition: all 150ms;
   border: 0;
 }
+
 .gradient-button:active {
   background: #9557ff;
 }
 
-/* Background shapes */
+/* Styling the background shapes */
 .background-shapes {
   position: absolute;
   top: 0;
@@ -103,11 +115,11 @@ h1 {
   overflow: hidden;
 }
 
+/* Styling the individual shapes */
 .shape {
   position: absolute;
   width: max(55px, 9vw);
   height: max(55px, 9vw);
-
   opacity: 1;
   animation: shapeMovement 8s infinite alternate;
   animation-timing-function: cubic-bezier(0.42, 0, 0.53, 0.99);
@@ -136,6 +148,7 @@ h1 {
   transform-origin: center;
 }
 
+/* Animating the shape movement */
 @keyframes shapeMovement {
   0% {
     transform: translate(-10px, -10px) rotate(0deg);
@@ -148,6 +161,7 @@ h1 {
   }
 }
 
+/* Positioning and duration for each shape */
 .shape:nth-child(1) {
   top: 53%;
   left: 56%;
@@ -232,30 +246,38 @@ h1 {
   left: 70%;
   animation-duration: 8s;
 }
+
 .shape:nth-child(15) {
   top: 44%;
   left: 30%;
   animation-duration: 4s;
 }
 
-/* !Media query for  mobile */
+/* Media query for mobile devices with a maximum width of 480px */
 @media (max-width: 480px) {
+  /* Adjusting the margin and padding of the quote container */
   .quote-container {
     margin: 2em 1em;
     padding: 2em 1.2em;
   }
+
+  /* Adjusting the font size of the heading */
   h1 {
     font-size: 2em;
   }
+
+  /* Adjusting the font size of the quote text */
   .quote-text {
     font-size: 1.6em;
     flex-shrink: 1;
   }
 
+  /* Adjusting the font size of the quote author */
   .quote-author {
     font-size: 1.2em;
   }
 
+  /* Adjusting the font size of the gradient button */
   .quote-button {
     font-size: 24px;
   }
