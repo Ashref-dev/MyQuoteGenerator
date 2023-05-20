@@ -16,5 +16,4 @@ let getQuote = () => {
     })
     .catch((error) => console.error(error));
 };
-//first time opening page quote load
-getQuote();
+
