@@ -36,7 +36,8 @@ body {
 
 /* Styling the heading element */
 h1 {
-  font-size: 6vw;
+  font-size: 8vh;
+  padding-top: 1.8vh;
   font-weight: 700;
   color: #333;
 }
@@ -302,12 +303,12 @@ because that's bigger than 9% of 300 pixels, which is only 27 pixels.
 
   /* Adjusting the font size of the heading for mobile */
   h1 {
-    font-size: 2.6em;
+    font-size: 6vh;
   }
 
   /* Adjusting the font size and flex shrink for the quote text for mobile */
   .quote-text {
-    font-size: 4vh;
+    font-size: 3.7vh;
     flex-shrink: 1;
   }
 
