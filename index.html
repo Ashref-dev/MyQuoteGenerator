@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Quote Generator</title>
+    <title>Get an inspiring quote !</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <!-- Primary Meta Tags -->
@@ -31,15 +31,15 @@
       content="https://i.ibb.co/bb7cjMF/og.jpg"
     />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://qquote.netlify.app/" />
-    <meta property="twitter:title" content="Get an inspiring quote !" />
+    <!-- ?Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://qquote.netlify.app/" />
+    <meta name="twitter:title" content="Get an inspiring quote !" />
     <meta
-      property="twitter:description"
+      name="twitter:description"
       content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!"
     />
-    <meta property="twitter:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
+    <meta name="twitter:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
     <!-- end of the open graph meta stuff -->
 
     <link rel="stylesheet" href="style.css" />
@@ -64,30 +64,30 @@
       <div class="shape shape-hexagon"></div>
     </div>
     <div class="container">
-      <h1>Random Quote Generator</h1>
+      <h1>INSPIRING QUOTES!</h1>
       <div class="quote-container">
         <p id="quote" class="quote-text">
           Click the button for an awesome quote :)
         </p>
         <p id="author" class="quote-author">- Ashref</p>
       </div>
-      <button id="new-quote" onclick="getQuote()" class="gradient-button">
-        Inspire me
-      </button>
+      <div>
+        <button id="new-quote" onclick="getQuote()" class="gradient-button">
+          Inspire me
+        </button>
+        <a
+          href="https://ashref.tn/"
+          target="_blank"
+          style="
+            text-decoration: none;
+            z-index: 10;
+            font-size: 1.2em;
+            color: black;
+          "
+        >
+          <p>www.ashref.tn 👋</p>
+        </a>
+      </div>
     </div>
-    <a
-      href="https://ashref.tn/"
-      target="_blank"
-      style="
-        text-decoration: none;
-        z-index: 10;
-        position: absolute;
-        bottom: 0;
-        font-size: 1.2em;
-        color: black;
-      "
-    >
-      <p>www.ashref.tn 👋</p>
-    </a>
   </body>
 </html>

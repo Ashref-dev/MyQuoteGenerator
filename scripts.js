@@ -16,4 +16,3 @@ let getQuote = () => {
     })
     .catch((error) => console.error(error));
 };
-

@@ -14,13 +14,11 @@
 /* Styling the body element */
 body {
   margin: 0;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
 }
 
 /* Styling the container element */
@@ -28,21 +26,26 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Styling the heading element */
 h1 {
-  font-size: 40px;
+  font-size: 6vw;
   font-weight: 700;
   color: #333;
-  margin-bottom: 20px;
 }
 
 /* Styling the quote container */
 .quote-container {
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 3em 10em;
-  padding: 2em 3.5em;
+  margin: 0em 15vh;
+  padding: 2.5vh 3.5em;
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -50,7 +53,7 @@ h1 {
 
 /* Styling the quote text */
 .quote-text {
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: 700;
   color: #555;
   margin-bottom: 10px;
@@ -66,6 +69,7 @@ h1 {
 
 /* Styling the gradient button */
 .gradient-button {
+  margin-bottom: 1vh;
   /* Setting the background gradient */
 
   background-image: linear-gradient(
@@ -81,7 +85,7 @@ h1 {
   /* Setting the font family, weight, and size */
   font-family: "Josefin sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: 1.2em;
 
   /* Setting the text color, border, padding, and border radius */
   color: white;
@@ -102,7 +106,6 @@ h1 {
 
 /* Styling the gradient button on hover and focus */
 .gradient-button:hover {
-  transform: translateY(-0.5rem);
   background-position: 100% 0;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -129,8 +132,8 @@ h1 {
 .shape {
   /* Setting the position and size of the shape */
   position: absolute;
-  width: max(55px, 8vw);
-  height: max(55px, 8vw);
+  width: max(55px, 7vw);
+  height: max(55px, 7vw);
   opacity: 1;
 
   /* Setting the animation properties for shape movement */
@@ -299,12 +302,12 @@ because that's bigger than 9% of 300 pixels, which is only 27 pixels.
 
   /* Adjusting the font size of the heading for mobile */
   h1 {
-    font-size: 2em;
+    font-size: 2.6em;
   }
 
   /* Adjusting the font size and flex shrink for the quote text for mobile */
   .quote-text {
-    font-size: 1.6em;
+    font-size: 4vh;
     flex-shrink: 1;
   }
 
@@ -314,7 +317,7 @@ because that's bigger than 9% of 300 pixels, which is only 27 pixels.
   }
 
   /* Adjusting the font size of the quote button for mobile */
-  .quote-button {
-    font-size: 24px;
+  .gradient-button {
+    font-size: 1em;
   }
 }
