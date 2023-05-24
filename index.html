@@ -1,93 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Get an inspiring quote !</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Primary Meta Tags -->
-    <title>Get an inspiring quote !</title>
-    <meta name="title" content="Get an inspiring quote !" />
-    <meta
-      name="description"
-      content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get an inspiring quote !</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://qquote.netlify.app/" />
-    <meta property="og:title" content="Get an inspiring quote !" />
-    <meta
-      property="og:description"
-      content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!"
-    />
-    <meta property="og:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
-    <meta property="og:image:url" content="https://i.ibb.co/bb7cjMF/og.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="614" />
-    <meta
-      property="og:image:secure_url"
-      content="https://i.ibb.co/bb7cjMF/og.jpg"
-    />
+  <!-- Primary Meta Tags -->
+  <title>Get an inspiring quote !</title>
+  <meta name="title" content="Get an inspiring quote !" />
+  <meta name="description"
+    content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!" />
 
-    <!-- ?Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://qquote.netlify.app/" />
-    <meta name="twitter:title" content="Get an inspiring quote !" />
-    <meta
-      name="twitter:description"
-      content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!"
-    />
-    <meta name="twitter:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
-    <!-- end of the open graph meta stuff -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qquote.netlify.app/" />
+  <meta property="og:title" content="Get an inspiring quote !" />
+  <meta property="og:description"
+    content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!" />
+  <meta property="og:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
+  <meta property="og:image:url" content="https://i.ibb.co/bb7cjMF/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="614" />
+  <meta property="og:image:secure_url" content="https://i.ibb.co/bb7cjMF/og.jpg" />
 
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="scripts.js"></script>
-  </head>
-  <body>
-    <div class="background-shapes">
-      <div class="shape shape-square"></div>
-      <div class="shape shape-square"></div>
-      <div class="shape shape-square"></div>
-      <div class="shape shape-circle"></div>
-      <div class="shape shape-circle"></div>
-      <div class="shape shape-circle"></div>
-      <div class="shape shape-triangle"></div>
-      <div class="shape shape-triangle"></div>
-      <div class="shape shape-triangle"></div>
-      <div class="shape shape-square"></div>
-      <div class="shape shape-circle"></div>
-      <div class="shape shape-triangle"></div>
-      <div class="shape shape-hexagon"></div>
-      <div class="shape shape-hexagon"></div>
-      <div class="shape shape-hexagon"></div>
+  <!-- ?Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://qquote.netlify.app/" />
+  <meta name="twitter:title" content="Get an inspiring quote !" />
+  <meta name="twitter:description"
+    content="This awesome quote generator is a cool and well-designed website that provides random quotes to uplift and inspire visitors. Whether you're seeking motivation, a moment of reflection, or simply some words of wisdom, this site has got you covered!" />
+  <meta name="twitter:image" content="https://i.ibb.co/bb7cjMF/og.jpg" />
+  <!-- end of the open graph meta stuff -->
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="background-shapes">
+    <div class="shape shape-square"></div>
+    <div class="shape shape-square"></div>
+    <div class="shape shape-square"></div>
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-triangle"></div>
+    <div class="shape shape-triangle"></div>
+    <div class="shape shape-triangle"></div>
+    <div class="shape shape-square"></div>
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-triangle"></div>
+    <div class="shape shape-hexagon"></div>
+    <div class="shape shape-hexagon"></div>
+    <div class="shape shape-hexagon"></div>
+  </div>
+  <div class="container">
+    <h1>INSPIRING QUOTES!</h1>
+    <div class="quote-container">
+      <p id="quote" class="quote-text">
+        Click the button for an awesome quote :)
+      </p>
+      <p id="author" class="quote-author">- Ashref</p>
+      <button class="gradient-button copy-quote" onclick="copyContent()">
+        <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/file-folder-type/copy-icon.png" alt=""
+          srcset="" style="width:max(2vw,15px);filter:invert();">
+      </button>
     </div>
-    <div class="container">
-      <h1>INSPIRING QUOTES v1!</h1>
-      <div class="quote-container">
-        <p id="quote" class="quote-text">
-          Click the button for an awesome quote :)
-        </p>
-        <p id="author" class="quote-author">- Ashref</p>
-      </div>
-      <div>
-        <button id="new-quote" onclick="getQuote()" class="gradient-button">
-          Inspire me
-        </button>
-        <a
-          href="https://ashref.tn/"
-          target="_blank"
-          style="
+    <div>
+      <button id="new-quote" onclick="getQuote()" class="gradient-button">
+        Inspire me
+      </button>
+      <a href="https://ashref.tn/" target="_blank" style="
             text-decoration: none;
             z-index: 10;
             font-size: 1.2em;
             color: black;
-          "
-        >
-          <p>www.ashref.tn 👋</p>
-        </a>
-      </div>
+          ">
+        <p>www.ashref.tn 👋</p>
+      </a>
     </div>
-  </body>
+  </div>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
 </html>
