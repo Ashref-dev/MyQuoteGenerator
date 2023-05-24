@@ -23,7 +23,14 @@ const copyContent = async () => {
   try {
     await navigator.clipboard.writeText(text);
     console.log('Content copied to clipboard');
+    showTooltip();
   } catch (err) {
     console.error('Failed to copy: ', err);
   }
+}
+
+let tool = document.querySelector(".popper-boi");
+let showTooltip = () => {
+  tool.classList.add("popper-boi-show");
+  setTimeout(() => (tool.classList.remove("popper-boi-show")), 1200);
 }

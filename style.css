@@ -343,3 +343,24 @@ because that's bigger than 9% of 300 pixels, which is only 27 pixels.
     font-size: 1em;
   }
 }
+
+/*!the popup popper code */
+.popper-boi {
+  opacity: 0;
+  background: black;
+  padding: 0.68rem 1rem;
+  position: absolute;
+  bottom: -1.4em;
+  left: 0.5em;
+  transform-origin: left;
+  width: max-content;
+  max-width: 256px;
+  border-radius: 8px;
+  transition: opacity 600ms, transform 128ms cubic-bezier(0.43, 0.09, 0.38, 2.56);
+  color: white;
+}
+
+
+.popper-boi-show {
+  opacity: 1;
+}
